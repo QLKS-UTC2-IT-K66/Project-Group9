@@ -6,14 +6,14 @@ CFLAGS  = -Wall -std=c11 -Iinclude \
 
 TARGET  = qlks.exe
 
-SRCS    = src/main.c \
-           src/room.c \
-           src/customer.c \
-           src/booking.c \
-           src/billing.c \
-           src/service.c \
-           src/membership.c \
-           src/file.c
+SRCS    = SRC/main.c \
+           SRC/room.c \
+           SRC/customer.c \
+           SRC/booking.c \
+           SRC/billing.c \
+           SRC/service.c \
+           SRC/membership.c \
+           SRC/file.c
 
 OBJS    = $(SRCS:.c=.o)
 
