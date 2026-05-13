@@ -324,7 +324,7 @@ static void billingMenu(void) {
                     RoomNode *rn = findRoom(roomHead, roomNum);
                     guest = rn ? &rn->data.currentGuest : &empty;
                 }
-                writeInvoiceToFile(*inv, *guest, "hoadon.txt");
+                writeInvoiceToFile(*inv, *guest, "Data/hoadon.txt");
                 break;
             }
             case 0: return;
