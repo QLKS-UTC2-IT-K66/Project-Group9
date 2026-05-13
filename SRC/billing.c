@@ -59,7 +59,6 @@ static void printInvoiceBox(Invoice invoice, Customer guest,
     printf(HEADER_STYLE   "  |                 MMLK TechHotel                   |\n" RESET);
     printf(HEADER_STYLE   "  +--------------------------------------------------+\n" RESET);
     
-    // Cấu trúc 1 dòng: khoảng trống (2) + label (14) + ": " (2) + data (31) + khoảng trống (1) = 50 ký tự
     printf("  |  %-14s: " HIGHLIGHT_STYLE "%-31s" RESET " |\n", "Ma hoa don", invoice.invoiceID);
     printf("  |  %-14s: " HIGHLIGHT_STYLE "%-31d" RESET " |\n", "Phong so", invoice.targetRoomNumber);
     printf("  |  %-14s: %-31.31s |\n", "Ten khach", guest.fullName[0] ? guest.fullName : "---");
@@ -69,8 +68,7 @@ static void printInvoiceBox(Invoice invoice, Customer guest,
     printf("  |  %-14s: %-31d |\n", "So ngay", invoice.stayDuration);
     
     printf(HEADER_STYLE "  +--------------------------------------------------+\n" RESET);
-    
-    // Đối với số tiền: độ dài 31 ký tự bao gồm cả số và chữ " VND"
+        
     printf("  |  %-14s: " MONEY_STYLE "%-27.0f VND" RESET " |\n", "Tien phong", invoice.roomTotal);
     printf("  |  %-14s: " MONEY_STYLE "%-27.0f VND" RESET " |\n", "Tien dich vu", invoice.serviceTotal);
     
@@ -99,7 +97,7 @@ void writeInvoiceToFile(Invoice invoice, Customer guest, const char *filename) {
 
     fprintf(f, "\n------------------------------------------\n");
     fprintf(f, "           HOA DON THANH TOAN\n");
-    fprintf(f, "         MMLK TechHotel\n");
+    fprintf(f, "           MMLK TechHotel\n");
     fprintf(f, "------------------------------------------\n");
     fprintf(f, "Ma HD      : %s\n", invoice.invoiceID);
     fprintf(f, "Phong      : %d\n", invoice.targetRoomNumber);
