@@ -130,6 +130,7 @@ void checkOut(RoomNode *head, Invoice invoices[], int invoiceCount) {
     printf(SUCCESS_STYLE "\n  ✓ Check-out phong %d thanh cong!\n" RESET, roomNumber);
     printf(INFO_STYLE    "  ℹ So ngay luu tru : %d ngay\n"  RESET, inv->stayDuration);
     printf(MONEY_STYLE   "  ℹ Tong tien phong : %.0f VND\n" RESET, inv->roomTotal);
+    printf(MONEY_STYLE   "  ℹ Tong tien dich vu : %.0f VND\n" RESET, inv->serviceTotal);
     if (inv->totalDiscount > 0)
         printf(FG_BRIGHT_GREEN "  ℹ Giam gia        : -%.0f VND\n" RESET, inv->totalDiscount);
     printf(MONEY_STYLE   "  ℹ Thanh toan      : %.0f VND\n" RESET, inv->netAmount);
