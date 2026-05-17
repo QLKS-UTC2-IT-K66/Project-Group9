@@ -11,7 +11,7 @@
 
 **Môn học:** Kỹ Thuật Lập Trình (IT1.103.3)  
 **GVHD:** ThS. Trần Thị Dung  
-**Trường:** ĐH Giao Thông Vận Tải – Phân Hiệu Tại TP.HCM · 2025
+**Trường:** ĐH Giao Thông Vận Tải – Phân Hiệu Tại TP.HCM · 2026
 
 </div>
 
@@ -187,7 +187,7 @@ mingw32-make run
 
 <div align="center">
 
-**Nhóm 9 · Kỹ Thuật Lập Trình (IT1.103.3) · ĐH GTVT TP.HCM · 2025**
+**Nhóm 9 · Kỹ Thuật Lập Trình (IT1.103.3) · ĐH GTVT TP.HCM · 2026**
 
 </div>
 
